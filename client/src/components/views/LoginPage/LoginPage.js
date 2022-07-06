@@ -27,6 +27,7 @@ function LoginPage() {
       password : Password,
     }
 
+    //action 넣어주기 = loginUser(body) -> user_action.js
     dispatch(loginUser(body))
       .then(response => {
         if(response.payload.loginSuccess){
